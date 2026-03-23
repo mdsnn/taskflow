@@ -1,0 +1,83 @@
+.screen {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.bg {
+  position: fixed; inset: 0; z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(124,106,255,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 90%, rgba(255,106,158,0.1)  0%, transparent 60%),
+    var(--bg);
+}
+.card {
+  position: relative; z-index: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 48px 44px;
+  width: 420px; max-width: 95vw;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+}
+.logo {
+  font-family: var(--font-display);
+  font-size: 28px; font-weight: 800; letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+.logo span { color: var(--accent); }
+.subtitle { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+
+.tabs {
+  display: flex; gap: 4px;
+  background: var(--surface2);
+  padding: 4px; border-radius: 10px;
+  margin-bottom: 28px;
+}
+.tab {
+  flex: 1; padding: 9px;
+  border: none; border-radius: 7px;
+  font-family: var(--font-body); font-size: 14px; font-weight: 500;
+  cursor: pointer; transition: all 0.2s;
+  background: transparent; color: var(--muted);
+}
+.tab.active { background: var(--accent); color: #fff; }
+
+.error {
+  background: rgba(255,106,106,0.1);
+  border: 1px solid rgba(255,106,106,0.3);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: var(--high); font-size: 13px;
+  margin-bottom: 16px;
+}
+.field { margin-bottom: 16px; }
+.field label {
+  display: block;
+  font-size: 12px; font-weight: 500;
+  color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.8px;
+  margin-bottom: 8px;
+}
+.field input {
+  width: 100%;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 13px 16px;
+  color: var(--text);
+  font-family: var(--font-body); font-size: 15px;
+  outline: none; transition: border-color 0.2s;
+}
+.field input:focus { border-color: var(--accent); }
+.btn {
+  width: 100%; padding: 14px;
+  background: var(--accent);
+  border: none; border-radius: 10px;
+  color: #fff;
+  font-family: var(--font-display); font-size: 15px; font-weight: 700;
+  cursor: pointer; letter-spacing: 0.3px;
+  transition: all 0.2s; margin-top: 8px;
+}
+.btn:hover    { background: #8f7fff; transform: translateY(-1px); }
+.btn:active   { transform: translateY(0); }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
