@@ -1,0 +1,112 @@
+# Dependencies
+/node_modules
+/frontend/node_modules
+/backend/venv
+/backend/env
+/backend/.venv
+/backend/__pycache__/
+/backend/*.pyc
+/backend/.python-version
+
+# Build outputs
+/frontend/build
+/frontend/dist
+/frontend/.next
+/frontend/out
+/backend/dist
+/backend/build
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+/backend/.env
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+/backend/logs/
+
+# Testing
+/coverage
+/frontend/coverage
+/backend/.coverage
+/backend/htmlcov
+/backend/.pytest_cache/
+/backend/.tox/
+/backend/.mypy_cache/
+/backend/.ruff_cache/
+
+# Python specific
+/backend/*.egg-info/
+/backend/.eggs/
+/backend/dist/
+/backend/develop-eggs/
+/backend/downloads/
+/backend/parts/
+/backend/sdist/
+/backend/var/
+/backend/wheels/
+/backend/*.egg/
+/backend/instance/
+/backend/.webassets-cache
+/backend/.scrapy
+/backend/pip-log.txt
+/backend/pip-delete-this-directory.txt
+/backend/.hypothesis/
+
+# Database
+/backend/*.db
+/backend/*.sqlite
+/backend/*.sqlite3
+
+# Uploads and media
+/backend/uploads/
+/backend/media/
+/backend/staticfiles/
+
+# React specific
+/frontend/.eslintcache
+/frontend/.stylelintcache
+
+# Package manager locks (optional - uncomment if you want to track lock files)
+# /frontend/package-lock.json
+# /frontend/yarn.lock
+# /frontend/pnpm-lock.yaml
+# /backend/requirements.txt
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Python virtual environment
+/backend/lib/
+/backend/include/
+/backend/bin/
+/backend/pyvenv.cfg
+
+# TypeScript
+/frontend/*.tsbuildinfo
+
+# Application specific
+*.pid
+*.seed
+*.pid.lock
